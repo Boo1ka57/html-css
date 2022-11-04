@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Don't resize me, I'm ticklish!</title>
+    <script>
+
+        function resize() {
+            var getField = document.getElementById("resize") ;
+            getField.innerHTML = getField.innerHTML + "<br> OOOps, That's tickly!<hr>"
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+<p id = "resize"> Don't resize this or this will ticklish for me!
+</p>
+    <script>
+        window.onresize = resize;
+    </script>
+</body>
+</html>

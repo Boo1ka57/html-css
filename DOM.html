@@ -1,0 +1,50 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <title>Planets</title>
+ <link rel="stylesheet" type = "text/css" href= "DOM.css">
+
+<script type="text/Javascript"> 
+
+function init() {
+var planet = document.getElementById("greenPlanet");
+planet.innerHTML = "Red Alert: YOur planet is ON FIRE! And now?";
+console.log(planet.innerHTML);
+
+planet.setAttribute("class", "addBorder");
+
+//РАБОТАЕМ С INPUT
+var getInput = document.getElementById("input1");
+
+var getValueFromInput = getInput.getAttribute("value");
+window.alert("V inpute napisano" + getValueFromInput);
+}
+window.onload = init;
+
+
+ </script>
+
+
+
+</head>
+
+<body>
+<input type="text" value="Vvedite text, dorogoi pidor" id = "input1" placeholder="AGA-AGA">
+<div id ="redBox">
+	<p id="redPlanet"> Nothing <em>to report</em> </p>
+</div>
+<div id ="greenBox">
+	<p id="greenPlanet">Everything's fine!</p>
+</div>
+<div id = "blueBox">
+	<p id="bluePlanet"> All systems A-OK</p>
+</div>
+
+
+
+
+
+</body>
+</html>

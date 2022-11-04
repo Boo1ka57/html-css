@@ -1,0 +1,50 @@
+#redBox {
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	background-color: red;
+	position: absolute;
+	margin-left: 50%;
+	text-align: center;
+	margin-top: 15%;
+
+}
+#greenBox {
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	background-color: greenyellow;
+	position: absolute;
+	margin-left: 40%;
+	text-align: center;
+	margin-top: 15%;
+
+}
+#blueBox {
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	background-color: lightskyblue;
+	position: absolute;
+	margin-left: 30%;
+	text-align: center;
+	margin-top: 15%;
+}
+p {
+	margin-top: 50px;
+	padding: 2px;
+
+}
+div{
+	opacity: 50%;
+	transition: opacity .2s;
+}
+div:hover {
+	opacity: 100% ;
+
+}
+
+div p.addBorder {
+	border: 2px dashed black;
+
+}
